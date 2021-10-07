@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Denis Oreshko Web site</title>
+        <link rel="stylesheet" type="text/css" href="css/reset_css.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <main>
+            <div id="container">
+                
+                <div id="left_column">
+                    <img id="avatar" src="img/avatar.JPG">
+                    <h1 id="name">Denis Oreshko</h1><br>
+                    <h2 id="profession">Frontend Developer</h2><br>
+                    <section id="contact_me">
+                        <h1>CONTACT ME</h1>
+                            <hr class = "line_article">
+                            <article id="contact_article">
+                                <br>
+                                +375297711980<br><br>
+                                 @DenisOreshko<br><br>
+                                 <span id="email">denisoreshkoofficial@gmail.com</span>
+                            </article>
+                    </section> 
+                    <section id="skills_pro">
+                        <h1>SKILLS PRO</h1>
+                            <hr class="line_article">
+                            <article id="skills_pro_article">
+                                
+                                HTML5, CSS3<br><br>
+                                JavaScript Basics, C, C++, Java<br><br>
+                                Git, GitHub<br><br>
+                                VS Code, IntelliJ IDEA<br><br>
+                                Adobe Photoshop, SketchUp, Autodesk 3ds Max
+
+                            </article>
+                    </section>               
+                </div>
+                <div id="right_column">
+                    <section id="about_me">
+                        <h1>ABOUT ME</h1>
+                            <hr class="line_article">
+                            <article id="about_article">Ever since school I was interested in exact sciences, technology, electronics and everything connected with it. Therefore, after school, I went to study at a technical university - BSUIR. While studying at the university, I got acquainted with programming in C ++. I was interested in website design, mobile application design.<br>
+                            After university, my work was mainly connected with electronic circuits, with iron, as engineers say. But interest in web technologies did not disappear, I studied html, css, JavaScript on my own. Made two sites on Joomla: mishinservice.by, kardancar.by I study 3D modeling in SketchUp and 3D Max.
+                            In general, I try to develop comprehensively. I am friends with sports. In my free time I am interested in writing music tracks.</article>
+                    </section>                    
+                    <section id="code_example">
+                        <h1>CODE EXAMPLE</h1>
+                            <hr class="line_article">
+                            <article id="code_example_article">
+                                <span style="font-weight:bold">KATA from CODEWARS</span>: Given a positive integer n written as abcdвЂ¦ (a, b, c, dвЂ¦ being digits) and a positive integer p we want to find a positive integer k, if it exists, such as the sum of the digits of n taken to the successive powers of p is equal to k * n.<br>
+                                In other words: Is there an integer k such as : (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + вЂ¦) = n * k
+                                If it is the case we will return k, if not return -1.<br>
+                                Note: n and p will always be given as strictly positive integers.<br><br>
+<pre>
+function digPow(n, p){
+   let num = 0;
+  
+   for(var c of n.toString())
+     num += Math.pow(Number(c),p++); 
+
+   return (num % n) ? -1 : num/n;
+}
+</pre>
+                            </article>
+                    </section>
+                    <section id="courses">
+                        <h1>COURSES</h1>
+                            <hr id="line_article">
+                            <article id="courses_article">                                
+                                HTML and CSS Tutorials on the w3schools (completed)<br><br>
+                                JavaScript Manual on learnjavascript.ru (in progress)<br><br>
+                                HTML, CSS, JavaScript: РІРІРѕРґРЅС‹Р№ РјРѕРґСѓР»СЊ. СЏРЅРґРµРєСЃ.РїСЂР°РєС‚РёРєСѓРј(completed)<br><br>
+                                RS Schools Course JavaScript/Front-end. Stage 0 (in progress)
+                            </article>
+                    </section>
+                    <section id="languages">
+                        <h1>LANGUAGES</h1>
+                            <hr id="line_article">
+                            <article id="languages_article">                                
+                                English - Pre-Intermediate<br><br>
+                                Russian - Native
+                            </article>
+                    </section>
+                    <footer></footer>
+                </div>
+
+            </div>
+        </main> 
+    </body>
+</html>
